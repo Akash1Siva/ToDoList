@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column; /* Stacks the input and button vertically */
+    align-items: center; /* Centers both elements horizontally */
+}
+
+#task-input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box; /* Ensures padding is included in the width */
+    margin-bottom: 10px; /* Space between the input and button */
+}
+
+#add-task-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+/* General styling for the Delete button */
+.delete-btn {
+    border: none;
+    background-color: #ff4d4d; /* Red color for the button */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 10px; /* Adds space between the task text and the button */
+    transition: background-color 0.3s ease; /* Smooth color transition on hover */
+}
+
+/* Hover effect for the Delete button */
+.delete-btn:hover {
+    background-color: #ff1a1a; /* Darker red color when hovered */
+}
+
+/* Focus effect for accessibility */
+.delete-btn:focus {
+    outline: none;
+    box-shadow: 0 0 5px 2px rgba(255, 77, 77, 0.5); /* Red focus outline */
+}
